@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:id="@+id/profile_toolbar"
+        app:navigationIcon="@drawable/baseline_keyboard_backspace_24_colored">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/baseline_person_pin_160"
+                android:layout_gravity="center_horizontal"
+                app:tint="@color/hookers_green" /> <!-- Icon -->
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:id="@+id/username"
+                android:layout_marginTop="1dp"
+                android:text="Username"
+                android:textSize="45dp"
+                android:textAlignment="center"
+                android:textColor="@color/charcoal"
+                android:drawablePadding="8dp"/> <!-- Username -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_settings_24"
+                    app:tint="@color/dark_slate_gray" />
+
+                <TextView
+                    android:id="@+id/account_settings"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Account Settings"
+                    android:textColor="@color/charcoal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat> <!-- Fields -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_history_24"
+                    app:tint="@color/dark_slate_gray" />
+
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="History"
+                    android:textColor="@color/charcoal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_chat_24"
+                    app:tint="@color/dark_slate_gray" />
+
+                <TextView
+                    android:id="@+id/messages"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Messages"
+                    android:textColor="@color/charcoal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_notifications_active_24"
+                    app:tint="@color/dark_slate_gray" />
+
+                <TextView
+                    android:id="@+id/notification"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Notifications"
+                    android:textColor="@color/charcoal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/logout_button"
+                android:textSize="18sp"
+                android:text="Logout"
+                android:textColor="@color/charcoal"
+                app:cornerRadius = "30dp"/> <!-- Logout -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
